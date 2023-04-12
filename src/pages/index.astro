@@ -1,0 +1,132 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Home from "../components/Home.astro";
+import Aabningstider from "../components/Aabningstider.astro";
+import Priser from "../components/Priser.astro";
+import Banner from "../components/Banner.astro";
+import Produkter from "../components/Produkter.astro";
+import Footer from "../components/Footer.astro";
+
+const priser = [
+  {
+    titel: "Klip",
+    produkter: [
+      ["Dameklip", "410"],
+      ["Herreklip", "290"],
+      ["Børneklip 0-10 år", "240"],
+    ],
+  },
+  {
+    titel: "Helfarve",
+    produkter: [
+      ["Kort hår", "Fra 520"],
+      ["Mellem hår", "Fra 620"],
+      ["Langt hår", "Fra 720"],
+    ],
+  },
+  {
+    titel: "Reflekser",
+    produkter: [
+      ["Kort hår", "Fra 770"],
+      ["Mellem hår", "Fra 870"],
+      ["Langt hår", "Fra 970"],
+      ["Reparation af top og kant", "Fra 600"],
+    ],
+  },
+  {
+    titel: "Effekt farve",
+    produkter: [
+      ["Kort hår", "Fra 810"],
+      ["Mellem hår", "Fra 920"],
+      ["Langt hår", "Fra 1030"],
+    ],
+  },
+  {
+    titel: "Toning / Skyllefarve / ShadowRoot",
+    produkter: [
+      ["Kort hår", "Fra 220"],
+      ["Mellem hår", "Fra 330"],
+      ["Langt hår", "Fra 430"],
+    ],
+  },
+  {
+    titel: "Permanent",
+    produkter: [
+      ["Permanent med klip, kort hår", "1120"],
+      ["Permanent med klip, mellem hår", "1230"],
+      ["Permanent med klip, langt hår", "1330"],
+    ],
+  },
+  {
+    titel: "Andet",
+    produkter: [
+      ["Retning af bryn", "100"],
+      ["Farvning af vipper eller bryn", "100"],
+      ["Farvning af vipper samt bryn", "170"],
+      ["Hår kur behandling", "170"],
+      ["Voks af overlæbe", "100"],
+      ["Make-up pr. ½time", "340"],
+      ["Håropsætning brud, galla, konfimation mm. pr. time", "680"],
+      ["Kørsel første 10 km", "110"],
+      ["Kørsel pr. 10 km udover", "60"],
+    ],
+  },
+  {
+    titel: "CND shellac behandlinger",
+    ekstraBesked: "alle behandlinger er med en mini manicure",
+    produkter: [
+      ["1 Farve", "390"],
+      ["Fransk", "450"],
+      ["Aftagning af shellac ved ny behandling", "100"],
+      ["Aftagning af shellac", "160"],
+    ],
+  },
+];
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="w-full">
+    <Navigation />
+    <Home />
+    <Aabningstider
+      mandag="8:30-16:00"
+      tirsdag="lukket"
+      onsdag="8:30-16:00"
+      torsdag="8:30-16:00"
+      fredag="8:30-16:00"
+      lordag="lukket"
+      sondag="lukket"
+    />
+    <Priser priser={priser} />
+    <Banner />
+    <Produkter />
+    <Footer />
+  </main>
+</Layout>
+<script>
+  const nav = document.querySelector(".nav");
+  const overlay = document.querySelector(".overlay");
+  const openBtn = document.querySelector(".openBtn");
+  const closeBtn = document.querySelector(".closeBtn");
+
+  openBtn.addEventListener("click", () => {
+    nav.classList.remove("translate-x-[100%]");
+    overlay.classList.remove("hidden");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    nav.classList.add("translate-x-[100%]");
+    overlay.classList.add("hidden");
+  });
+
+  window.addEventListener("hashchange", () => {
+    nav.classList.add("translate-x-[100%]");
+    overlay.classList.add("hidden");
+  });
+
+  overlay.addEventListener("click", () => {
+    nav.classList.add("translate-x-[100%]");
+    overlay.classList.add("hidden");
+  });
+</script>
