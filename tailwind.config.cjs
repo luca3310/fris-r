@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
+      Poltawski: ["Pacifico", "sans-serif"],
     },
   },
   plugins: [],
