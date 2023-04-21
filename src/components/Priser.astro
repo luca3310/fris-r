@@ -30,13 +30,13 @@
     </p>
   </div>
   <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[90%] gap-20 text-sm"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] gap-20 text-sm"
   >
     {
       Astro.props.priser.map((produkt) => (
         <div class="shadow-lg p-5 rounded border-l-4 border-[#99998E] z-10 bg-[#424548]">
           {produkt.ekstraBesked ? (
-            <div class="flex flex-col gap-1">
+            <div class="flex flex-col gap-1 pb-2">
               <h3 class="text-base md:text-lg lg:text-xl font-bold p-1 ">
                 {produkt.titel}
               </h3>
@@ -53,8 +53,8 @@
             {produkt.produkter.map((produkt) => (
               <li class="flex text-xs lg:text-sm justify-between border-b-[1px] p-1">
                 <>
-                  <p>{produkt[0]}</p>
-                  <p>{produkt[1]} kr</p>
+                  <p class="w-4/5">{produkt[0]}</p>
+                  <p class="w-1/5 text-right">{produkt[1]} kr</p>
                 </>
               </li>
             ))}
