@@ -31,16 +31,16 @@
     </p>
   </div>
   <div class="flex flex-col gap-7 items-center">
-    <div class="flex flex-col justify-between items-center gap-2">
-      <h2 class="text-4xl font-bold">8.30-16.00</h2><p class="text-xl">
-        Mandag
-      </p>
-    </div>
-    <div class="flex flex-col justify-between items-center gap-2">
-      <h2 class="text-4xl font-bold">8.30-16.00</h2><p class="text-xl">
-        Onsdag-Fredag
-      </p>
-    </div>
+    {
+      Astro.props.tider.map((tid) => (
+        <div class="flex flex-col justify-between items-center gap-2">
+          <>
+            <h2 class="text-4xl font-bold">{tid[0]}</h2>
+            <p class="text-xl">{tid[1]}</p>
+          </>
+        </div>
+      ))
+    }
   </div>
   <div
     id="om"

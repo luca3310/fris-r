@@ -1,0 +1,75 @@
+[
+  {
+    "titel": "Klip",
+    "produkter": [
+      ["Dameklip", "410"],
+      ["Herreklip", "290"],
+      ["Børneklip 0-10 år", "240"]
+    ]
+  },
+  {
+    "titel": "Helfarve",
+    "produkter": [
+      ["Kort hår", "Fra 520"],
+      ["Mellem hår", "Fra 620"],
+      ["Langt hår", "Fra 720"]
+    ]
+  },
+  {
+    "titel": "Reflekser",
+    "produkter": [
+      ["Kort hår", "Fra 770"],
+      ["Mellem hår", "Fra 870"],
+      ["Langt hår", "Fra 970"],
+      ["Reparation af top og kant", "Fra 600"]
+    ]
+  },
+  {
+    "titel": "Effekt farve",
+    "produkter": [
+      ["Kort hår", "Fra 810"],
+      ["Mellem hår", "Fra 920"],
+      ["Langt hår", "Fra 1030"]
+    ]
+  },
+  {
+    "titel": "Toning / Skyllefarve / ShadowRoot",
+    "produkter": [
+      ["Kort hår", "Fra 220"],
+      ["Mellem hår", "Fra 330"],
+      ["Langt hår", "Fra 430"]
+    ]
+  },
+  {
+    "titel": "Permanent",
+    "produkter": [
+      ["Permanent med klip, kort hår", "1120"],
+      ["Permanent med klip, mellem hår", "1230"],
+      ["Permanent med klip, langt hår", "1330"]
+    ]
+  },
+  {
+    "titel": "Andet",
+    "produkter": [
+      ["Retning af bryn", "100"],
+      ["Farvning af vipper eller bryn", "100"],
+      ["Farvning af vipper samt bryn", "170"],
+      ["Hår kur behandling", "170"],
+      ["Voks af overlæbe", "100"],
+      ["Make-up pr. ½time", "340"],
+      ["Håropsætning brud, galla, konfimation mm. pr. time", "680"],
+      ["Kørsel første 10 km", "110"],
+      ["Kørsel pr. 10 km udover", "60"]
+    ]
+  },
+  {
+    "titel": "CND shellac behandlinger",
+    "ekstraBesked": "alle behandlinger er med en mini manicure",
+    "produkter": [
+      ["1 Farve", "390"],
+      ["Fransk", "450"],
+      ["Aftagning af shellac ved ny behandling", "100"],
+      ["Aftagning af shellac", "160"]
+    ]
+  }
+]
